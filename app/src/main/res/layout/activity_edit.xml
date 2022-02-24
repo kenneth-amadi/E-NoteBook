@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	tools:context="com.kixfobby.notebook.EditActivity"
+	android:orientation="vertical">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+		<ScrollView
+			android:id="@+id/scroll"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fillViewport="true">
+
+			<com.kixfobby.notebook.EditText
+				android:id="@+id/etText"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@null"
+				android:fontFamily="sans-serif-condensed"
+				android:gravity="top|start"
+				android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+				android:maxLength="1000000"
+				android:paddingStart="3dp"
+				android:paddingEnd="3dp"
+				android:textColor="@color/textColorPrimary"
+				android:textSize="23sp" />
+
+		</ScrollView>
+
+</LinearLayout>
+

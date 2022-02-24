@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/windowBackground"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingBottom="@dimen/spacing_medium"
+		android:paddingLeft="@dimen/spacing_medium"
+		android:paddingRight="@dimen/spacing_medium"
+		android:paddingTop="@dimen/spacing_medium">
+
+		<View
+			android:layout_width="@dimen/spacing_large"
+			android:layout_height="0dp"/>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/title"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+				android:textColor="@color/colorPrimaryDark"
+				android:textStyle="bold"
+				android:fontFamily="cursive"/>
+
+		</LinearLayout>
+
+		<ImageButton
+			android:id="@+id/bt_close"
+			android:layout_width="?attr/actionBarSize"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/selectableItemBackgroundBorderless"
+			android:tint="@color/red_900"
+			app:srcCompat="@drawable/ic_close"/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/orange_500"/>
+
+	<WebView
+		android:id="@+id/webview"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:selectable="false"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/orange_500"/>
+
+	<com.google.android.material.button.MaterialButton
+		android:id="@+id/bt_accept"
+		android:layout_width="170dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:backgroundTint="#607D8B"
+		android:fontFamily="cursive"
+		android:text="@string/accept"
+		android:textAllCaps="false"
+		android:textColor="@color/white"
+		app:cornerRadius="24dp" />
+
+</LinearLayout>
+

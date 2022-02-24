@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="@color/introFirst">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_marginBottom="51dp">
+
+		<ScrollView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:fitsSystemWindows="true">
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:paddingTop="40dp"
+				android:gravity="center_horizontal"
+				android:orientation="vertical"
+				android:paddingBottom="40dp">
+
+				<ImageView
+					android:layout_width="110dp"
+					android:layout_height="100dp"
+					android:src="@drawable/ic_apps"
+					tools:ignore="contentDescription"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="E-CONVERTER"
+					android:textColor="@android:color/black"
+					android:textSize="30sp"
+					android:fontFamily="sans-serif-condensed"
+					android:textAlignment="center"
+					android:layout_marginBottom="35dp"
+					android:id="@+id/intro1"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="MyWorld Converter is an easy to use converter with a smooth interface. It contains 16 different conversion categories which can reverse the conversion units. \n\n To enable standard form format (eg. 1.234x10⁴ instead of 0.0001234), click on the menu on the top right section of the screen. The standard form is displayed only when the number of digits is above 7 whole digits or 4 decimal digits as in the example above. \n\n It by default, displays numbers with comma(,) separator but in standard format there is no comma. \n\n  It can display answers up to 16 significant figures, and 10 decimal places.  This is to give you a quite accurate and adequate result especially when working with large data and there's need for further computations. \n\n  You can discover more other features whilst using the app. "
+					android:paddingTop="10dp"
+					android:paddingLeft="20dp"
+					android:paddingRight="20dp"
+					android:textColor="@android:color/black"
+					android:textSize="18sp"
+					android:textAlignment="center"
+					android:fontFamily="sans-serif-light"/>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

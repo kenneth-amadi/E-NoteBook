@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="note_screen">
+
+	<PreferenceCategory android:title="Note Settings">  
+		<ListPreference
+			android:key="fontsize"  
+			android:title="Font Size"
+			android:summary="Choose a font size"  
+			android:entries="@array/font_entries"
+			android:entryValues="@array/font_entries"
+			android:defaultValue="22"
+			android:dialogTitle="Choose a font size" />
+
+		<com.kixfobby.notebook.preference.FontTypePreference
+			android:key="font"  
+			android:title="Font"  
+			android:summary="Choose  Font Type"  
+			android:dialogTitle="Choose A Font Type" 
+			android:defaultValue="Sans Serif" />
+
+		<com.kixfobby.notebook.preference.ColorPreference
+			android:key="fontcolor"  
+			android:title="Font Color"
+			android:summary="Choose a font color"  
+			android:defaultValue="0xFFCCCCCC"
+			android:dialogTitle="Choose A Font Color" />
+
+		<com.kixfobby.notebook.preference.ColorPreference
+			android:key="bgcolor"
+			android:title="Background Color"
+			android:summary="Choose a background color"  
+			android:defaultValue="0xFF000000"
+			android:dialogTitle="Choose A Background Color" />
+	
+		<CheckBoxPreference  
+			android:key="linewrap"  
+			android:title="Line Wrap"  
+			android:summary="Wraps lines when they get too long" 
+			android:defaultValue="true" />  
+
+		<SwitchPreference
+			android:defaultValue="false"
+			android:key="line"
+			android:summary="Disable ruled lines in note"
+			android:title="Note Ruled Lines" />
+				
+			</PreferenceCategory>
+
+</PreferenceScreen>
